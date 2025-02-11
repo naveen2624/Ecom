@@ -1,0 +1,21 @@
+/* Cart Section */
+.cart {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cart button {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart button:hover {
+  background-color: #128c7e;
+}

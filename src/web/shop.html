@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Shop - Shop Now</title>
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <h1>Fruit Shop</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Fruit Shop Section -->
+    <section class="shop">
+      <div class="product-card">
+        <img src="apple.jpg" alt="Apple" />
+        <h3>Apple</h3>
+        <p>₹20</p>
+        <input type="number" id="apple-qty" min="1" value="1" />
+        <button
+          onclick="addToCart('apple', 'Apple', 20, document.getElementById('apple-qty').value)"
+        >
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="banana.jpg" alt="Banana" />
+        <h3>Banana</h3>
+        <p>₹15</p>
+        <input type="number" id="banana-qty" min="1" value="1" />
+        <button
+          onclick="addToCart('banana', 'Banana', 15, document.getElementById('banana-qty').value)"
+        >
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="orange.jpg" alt="Orange" />
+        <h3>Orange</h3>
+        <p>₹20</p>
+        <input type="number" id="orange-qty" min="1" value="1" />
+        <button
+          onclick="addToCart('orange', 'Orange', 20, document.getElementById('orange-qty').value)"
+        >
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="grapes.jpg" alt="Grapes" />
+        <h3>Grapes</h3>
+        <p>₹30</p>
+        <input type="number" id="grapes-qty" min="1" value="1" />
+        <button
+          onclick="addToCart('grapes', 'Grapes', 30, document.getElementById('grapes-qty').value)"
+        >
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="mango.jpg" alt="Mango" />
+        <h3>Mango</h3>
+        <p>₹50</p>
+        <input type="number" id="mango-qty" min="1" value="1" />
+        <button
+          onclick="addToCart('mango', 'Mango', 50, document.getElementById('mango-qty').value)"
+        >
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="peach.jpg" alt="Peach" />
+        <h3>Peach</h3>
+        <p>₹80</p>
+        <input type="number" id="peach-qty" min="1" value="1" />
+        <button
+          onclick="addToCart('peach', 'Peach', 80, document.getElementById('peach-qty').value)"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+      <h2>Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total Amount: ₹<span id="total-amount">0</span></p>
+      <button onclick="checkout()">Buy Now</button>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Fruit Shop | All Rights Reserved</p>
+    </footer>
+
+    <script src="shop.js"></script>
+  </body>
+</html>
